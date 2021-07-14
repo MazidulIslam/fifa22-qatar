@@ -1,0 +1,326 @@
+/* google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* common styles / utilities */
+body {
+  font-family: "Poppins", sans-serif;
+  /* width: 1440px; */
+  width: 100%;
+  background: #ffffff;
+  color: rgba(108, 108, 108, 1);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.button-style .button {
+  text-decoration: none;
+  color: white;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+}
+.button-style .button:hover {
+  background-color: #f10c60;
+}
+.banner,
+.highlights {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* width: 1160px; */
+  width: 80%;
+  align-items: center;
+}
+.banner-left,
+.highlights-left {
+  width: 50%;
+}
+.banner-text,
+.highlights-text {
+  width: 80%;
+}
+
+/* header styles  */
+header {
+  background: #2d25a0;
+  height: 677px;
+}
+/* main styles */
+main {
+  width: 100%;
+}
+
+/* navigation  */
+.navigation {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 52px 0;
+}
+/* top-navbar  */
+.top-navbar a {
+  padding-right: 36px;
+  text-decoration: none;
+  color: white;
+}
+
+/* login  */
+
+.button-style .button i {
+  margin-right: 8px;
+}
+
+/* banner */
+
+.banner-text h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+}
+.button-style .button span {
+  margin-left: 8px;
+}
+.banner-right {
+  width: 50%;
+  justify-content: space-between;
+}
+.banner-img img {
+  width: 80%;
+  height: auto;
+}
+#jumping-animation {
+  animation: jump 3s linear infinite alternate;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* player section styles  */
+.Players-Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+  margin: 70px 0;
+  row-gap: 27px;
+  column-gap: 30px;
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.123);
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.15);
+}
+.player-thumbnail,
+.player-info {
+  margin: 15px;
+}
+.player-thumbnail img {
+  width: 100%;
+}
+.player-info {
+  padding: 0;
+}
+.player-info h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #18191f;
+}
+.player-info p {
+  color: #6c6c6c;
+}
+/* highlights section  */
+
+.highlights-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(10, 8, 38, 1);
+}
+.highlights-left .button-style {
+  margin-top: 24px;
+}
+/* upcoming  matches styles  */
+.Upcoming-matches-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Upcoming-matches-section i {
+  font-size: 3em;
+  opacity: 0.3;
+  padding: 0 50px;
+}
+.Upcoming-matches-section i:hover {
+  opacity: 0.8;
+}
+.matches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  margin: 140px auto;
+  column-gap: 20px;
+  justify-content: space-between;
+}
+.match {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.123);
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.match:hover {
+  top: -3px;
+}
+.match h2 {
+  color: #e02c6d;
+}
+.country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  color: #18191f;
+}
+.country .vs {
+  padding: 0 60px;
+}
+/* stadium list styles  */
+.stadium-list {
+  width: 80%;
+  margin: 0 auto;
+}
+.stadiums {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.stadium {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.stadium .stadium-image img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.stadium:hover .stadium-image {
+  transform: scale(1.3);
+  transition: transform 3s ease-in-out;
+}
+.stadium:hover .stadium-info {
+  display: block;
+  color: white;
+  background-color: #e01a62b2;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding-left: 40px;
+}
+.stadium-info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+/* footer section style  */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 158px;
+  margin-bottom: 63px;
+}
+footer img {
+  width: 30%;
+  height: 100%;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+}
+.social-icons img {
+  width: 32px;
+  height: 32px;
+}
+footer p {
+  color: black;
+}
+
+/* ==============================
+Media Queries
+================================= */
+
+/* mobile devices */
+@media only screen and (max-width: 668px) {
+  header {
+    height: auto;
+    width: 100%;
+  }
+  .banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-left {
+    width: 70%;
+  }
+  .banner-right {
+    width: 70%;
+    margin-top: 20px;
+  }
+  .banner-text {
+    font-size: 48px;
+  }
+  .players,
+  .matches,
+  .stadiums {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .matches {
+    row-gap: 20px;
+  }
+  .Upcoming-matches-section i {
+    display: none;
+  }
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+  .highlights-text h1 {
+    font-size: 32px;
+  }
+
+  footer img {
+    width: 50%;
+  }
+}
