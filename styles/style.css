@@ -172,10 +172,10 @@ main {
 .matches {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 80%;
+  width: 70%;
   margin: 140px auto;
   column-gap: 20px;
-  justify-content: space-between;
+  justify-content: center;
 }
 .match {
   width: 100%;
